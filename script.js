@@ -1,33 +1,47 @@
 //Declaring the initial empty player choice, and the three choices Computer has to pick from
 
-let playerChoice = "";
-let compChoice = "";
-const CHOICES = ["rock", "paper", "scissors", "lizard", "spock"];
+let outcome = document.getElementById("round-info");
+let playerScore = 0;
+let compScore = 0;
+const CHOICES = ["Rock", "Paper", "Scissors", "Lizard", "Spock"];
 
-//Functions that set the players choice to the relavent button
+//Functions that set the players choice to the relavent button, then randomize the computers choice, then play the game
 
 function chooseRock() {
-    playerChoice = "rock";
-    compChoice = CHOICES[Math.floor(Math.random() * CHOICES.length)];
+    return playRound("Rock", CHOICES[Math.floor(Math.random() * CHOICES.length)]);
 };
 
 function choosePaper() {
-    playerChoice = "paper";
-    compChoice = CHOICES[Math.floor(Math.random() * CHOICES.length)];
+    return playRound("Paper", CHOICES[Math.floor(Math.random() * CHOICES.length)]);
 };
 
 function chooseScissors() {
-    playerChoice = "scissors";
-    compChoice = CHOICES[Math.floor(Math.random() * CHOICES.length)];
+    return playRound("Scissors", CHOICES[Math.floor(Math.random() * CHOICES.length)]);
 };
 
 function chooseLizard() {
-    playerChoice = "lizard";
-    compChoice = CHOICES[Math.floor(Math.random() * CHOICES.length)];
+    return playRound("Lizard", CHOICES[Math.floor(Math.random() * CHOICES.length)]);
 };
 
 function chooseSpock() {
-    playerChoice = "spock";
-    compChoice = CHOICES[Math.floor(Math.random() * CHOICES.length)];
+    return playRound("Spock", CHOICES[Math.floor(Math.random() * CHOICES.length)]);
+};
+
+//Play game function
+
+function playRound(playerChoice, compChoice) {
+    
+    //if its a tie
+    if (playerChoice === compChoice) {
+        return outcome.innerHTML = "You both chose " + playerChoice + ", it's a tie!";
+
+    //outcomes for rock
+    } else if (playerChoice == "Rock" && compChoice == "Scissors" || "Lizard") {
+        return outcome.innerHTML = playerChoice + " crushes " + compChoice + ", YOU WIN!";
+    } else if (playerChoice == "Rock" && compChoice == "Spock") {
+        return outcome.innerHTML = playerChoice + " is vaporized by " + compChoice + ", you lose.";
+    } else if (playerChoice == "Rock" && compChoice == "Paper") {
+        return outcome.innerHTML = playerChoice + " is covered by " + compChoice + ", you lose.";
+    }
 };
 
