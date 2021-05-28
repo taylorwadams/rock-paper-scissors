@@ -1,0 +1,1 @@
+This Rock Paper Scissors project was created as part of The Odin Project cirriculum. It is my second try at a rock paper scissors, and I have attempted to imporve upon both my script, page layout, and code readability.
