@@ -2,7 +2,7 @@
 
 let playerChoice = "";
 let compChoice = "";
-const CHOICES = ["rock", "paper", "scissors"];
+const CHOICES = ["rock", "paper", "scissors", "lizard", "spock"];
 
 //Functions that set the players choice to the relavent button
 
@@ -18,6 +18,16 @@ function choosePaper() {
 
 function chooseScissors() {
     playerChoice = "scissors";
+    compChoice = CHOICES[Math.floor(Math.random() * CHOICES.length)];
+};
+
+function chooseLizard() {
+    playerChoice = "lizard";
+    compChoice = CHOICES[Math.floor(Math.random() * CHOICES.length)];
+};
+
+function chooseSpock() {
+    playerChoice = "spock";
     compChoice = CHOICES[Math.floor(Math.random() * CHOICES.length)];
 };
 
