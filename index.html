@@ -7,11 +7,30 @@
     <body>
 
         <div id="player-choice-buttons">
-            <button id="rock-button" class="choice-button" onclick="chooseRock()">Rock</button>
-            <button id="paper-button" class="choice-button" onclick="choosePaper()">Paper</button>
-            <button id="scissors-button" class="choice-button" onclick="chooseScissors()">Scissors</button>
-            <button id="lizard-button" class="choice-button" onclick="chooseLizard()">Lizard</button>
-            <button id="spock-button" class="choice-button" onclick="chooseSpock()">Spock</button>
+
+            <img id="game-chart" class="game-chart" 
+            src="https://i0.wp.com/everydaylean.info/wp-content/uploads/2014/12/500px-Pierre_ciseaux_feuille_l%C3%A9zard_spock_aligned.svg_.png?fit=500%2C500">
+
+            <div id="rock-button" class="choice-button" onclick="chooseRock()">
+                <h2 id="rock-title" class="hidden">Rock</h2>
+            </div>
+
+            <div id="paper-button" class="choice-button" onclick="choosePaper()">
+                <h2 id="paper-title" class="hidden">Paper</h2>
+            </div>
+
+            <div id="scissors-button" class="choice-button" onclick="chooseScissors()">
+                <h2 id="scissors-title" class="hidden">Scissors</h2>
+            </div>
+
+            <div id="lizard-button" class="choice-button" onclick="chooseLizard()">
+                <h2 id="lizard-title" class="hidden">Lizard</h2>
+            </div>
+
+            <div id="spock-button" class="choice-button" onclick="chooseSpock()">
+                <h2 id="spock-title" class="hidden">Spock</h2>
+            </div>
+
         </div>
 
         <div id="round-container">

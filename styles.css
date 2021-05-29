@@ -1,0 +1,77 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+.choice-button {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    border: 0px solid black;
+    border-radius: 100%;
+}
+
+.choice-button:hover {
+    cursor: pointer;
+}
+
+#rock-button {
+    transform: translateY(-176px) translateX(280px);
+    box-shadow: 0 0 0px rgb(226, 160, 160);
+    transition: 0.5s ease-out;
+}
+
+#rock-button:hover {
+    box-shadow: 0 0 40px rgb(226, 160, 160);
+    transition: 0.5s ease-out;
+}
+
+#paper-button {
+    transform: translateY(-367px) translateX(337px);
+    box-shadow: 0 0 0px rgb(206, 204, 127);
+    transition: 0.5s ease-out;
+}
+
+#paper-button:hover {
+    box-shadow: 0 0 40px rgb(206, 204, 127);
+    transition: 0.5s ease-out;
+}
+
+#scissors-button {
+    transform: translateY(-478px) translateX(175px);
+    box-shadow: 0 0 0px rgb(209, 155, 223);
+    transition: 0.5s ease-out;
+}
+
+#scissors-button:hover {
+    box-shadow: 0 0 40px rgb(209, 155, 223);
+    transition: 0.5s ease-out;
+}
+
+#lizard-button {
+    transform: translateY(-172px) translateX(83px);
+    box-shadow: 0 0 0px rgb(155, 223, 172);
+    transition: 0.5s ease-out;
+}
+
+#lizard-button:hover {
+    box-shadow: 0 0 40px rgb(155, 223, 172);
+    transition: 0.5s ease-out;
+}
+
+#spock-button {
+    transform: translateY(-362px) translateX(21px);
+    box-shadow: 0 0 0px rgb(155, 160, 223);
+    transition: 0.5s ease-out;
+}
+
+#spock-button:hover {
+    box-shadow: 0 0 40px rgb(155, 160, 223);
+    transition: 0.5s ease-out;
+}
