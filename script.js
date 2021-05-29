@@ -122,6 +122,7 @@ function addPlayerScore() {
         document.getElementById("player-score").innerHTML = playerScore;
         compScore = 0;
         document.getElementById("comp-score").innerHTML = compScore;
+        outcome.innerHTML = "Choose your fighter";
         return alert("You are the first to 5, You WIN!")
     }
 };
@@ -134,6 +135,7 @@ function addCompScore() {
         document.getElementById("player-score").innerHTML = playerScore;
         compScore = 0;
         document.getElementById("comp-score").innerHTML = compScore;
+        outcome.innerHTML = "Choose your fighter";
         return alert("Computer is first to 5, You WIN!")
     }
 };
